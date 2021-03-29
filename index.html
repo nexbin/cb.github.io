@@ -152,6 +152,74 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-单链表" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/03/29/%E5%8D%95%E9%93%BE%E8%A1%A8/">顺序表--单链表</a>
+    </h1>
+  
+
+        
+        <a href="/2021/03/29/%E5%8D%95%E9%93%BE%E8%A1%A8/" class="archive-article-date">
+  	<time datetime="2021-03-29T06:43:17.715Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-29</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="单链表是一种链式存取的数据结构，用一组地址任意的存储单元存放线性表中的数据元素。链表中的数据是以结点来表示的，每个结点的构成：元素-数据元素的映象-指针-指示后继元素存储位置-，元素就是存储数据的存储单元，指针就是连接每个结点的地址数据。"><a href="#单链表是一种链式存取的数据结构，用一组地址任意的存储单元存放线性表中的数据元素。链表中的数据是以结点来表示的，每个结点的构成：元素-数据元素的映象-指针-指示后继元素存储位置-，元素就是存储数据的存储单元，指针就是连接每个结点的地址数据。" class="headerlink" title="单链表是一种链式存取的数据结构，用一组地址任意的存储单元存放线性表中的数据元素。链表中的数据是以结点来表示的，每个结点的构成：元素(数据元素的映象) + 指针(指示后继元素存储位置)，元素就是存储数据的存储单元，指针就是连接每个结点的地址数据。"></a>单链表是一种链式存取的数据结构，用一组地址任意的存储单元存放线性表中的数据元素。链表中的数据是以结点来表示的，每个结点的构成：元素(数据元素的映象) + 指针(指示后继元素存储位置)，元素就是存储数据的存储单元，指针就是连接每个结点的地址数据。</h3><ul>
+<li><p>单链表的接口定义</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">package danlianbiao;</span><br><span class="line"></span><br><span class="line">public interface LinkedListInterface &#123;</span><br><span class="line"></span><br><span class="line">    public boolean isEmpty();&#x2F;&#x2F;判空</span><br><span class="line"></span><br><span class="line">    public void printList(); &#x2F;&#x2F;遍历</span><br><span class="line"></span><br><span class="line">    public int length(); &#x2F;&#x2F;长度</span><br><span class="line"></span><br><span class="line">    public int locate(Object element); &#x2F;&#x2F;按值查找</span><br><span class="line"></span><br><span class="line">    public Object getElement(int index) throws Exception;&#x2F;&#x2F;按位查找</span><br><span class="line"></span><br><span class="line">    public void insert(int index,Object element) throws Exception;</span><br><span class="line"></span><br><span class="line">    public Object delete(int index) throws Exception;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>单链表的实现</p>
+</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/03/29/%E5%8D%95%E9%93%BE%E8%A1%A8/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-linearlist" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -263,23 +331,10 @@
 <li><p>二、</p>
 <ul>
 <li>安装hexo框架<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ cnpm install -g hexo-cli</span><br><span class="line">$ hexo -v  (查看hexo版本)</span><br><span class="line">$ mkdir blog  (创建blog目录)</span><br><span class="line">$ cd blog  (进入blog目录)</span><br><span class="line">$ sudo hexo init  (生成博客 初始化博客)</span><br><span class="line">$ hexo s  (启动本地博客服务)</span><br><span class="line">http:&#x2F;&#x2F;localhost:4000&#x2F; #本地访问地址</span><br><span class="line">$ hexo n &quot;我的第一篇文章&quot; #创建新的文章</span><br></pre></td></tr></table></figure></li>
-<li>返回blog目录<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean #清理</span><br><span class="line">$ hexo g #生成</span><br></pre></td></tr></table></figure></li>
-<li>Github创建一个新的仓库 YourGithubName.github.io</li>
-</ul>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cnpm install --save hexo-deployer-git #在blog目录下安装git部署插件</span><br></pre></td></tr></table></figure></li>
-<li><p>三、</p>
-<ul>
-<li>配置_config.yml<br>#(space)Deployment<br>##(space)DOCS: HTTPS://HEXO.IO/DOCS/DEPLOYMENT.HTML<br>deploy:<br>  type: git<br>  repo: <a target="_blank" rel="noopener" href="https://github.com/nexbin/cb.github.io.git">https://github.com/nexbin/cb.github.io.git</a><br>  branch: master</li>
-</ul>
-<p>  hexo d #部署到Github仓库里<br>  <a target="_blank" rel="noopener" href="https://yourgithubname.github.io/">https://YourGithubName.github.io/</a> #访问这个地址可以查看博客</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;litten&#x2F;hexo-theme-yilia.git themes&#x2F;yilia #下载yilia主题到本地</span><br></pre></td></tr></table></figure>
-<ul>
-<li>修改hexo根目录下的 _config.yml 文件 ： theme: yilia<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo c #清理一下</span><br><span class="line">hexo g #生成</span><br><span class="line">hexo d #部署到远程Github仓库</span><br></pre></td></tr></table></figure>
-<a target="_blank" rel="noopener" href="https://yourgithubname.github.io/">https://YourGithubName.github.io/</a> #查看博客</li>
-</ul>
-</li>
-</ul>
-
+<li>返回blog目录<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean #清理</span><br><span class="line">$ hexo g #生成</span><br></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2021/03/29/hello-hexo/#more">more >></a>
+        
       
 
       
