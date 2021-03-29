@@ -16,7 +16,7 @@
 <meta property="og:description" content="双链表双向链表也叫双链表，是链表的一种，它的每个数据结点中都有两个指针，分别指向直接后继和直接前驱。所以，从双向链表中的任意一个结点开始，都可以很方便地访问它的前驱结点和后继结点。一般我们都构造双向循环链表。 单链表与双链表的优缺点1、双向链表：从双向链表中的任意一个结点开始，都可以很方便地访问前驱结点和后继结点。 2、单向链表：单个结点创建非常方便，普通的线性内存通常在创建的时候就需要设定数据的">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-03-29T08:49:47.998Z">
-<meta property="article:modified_time" content="2021-03-29T09:51:45.016Z">
+<meta property="article:modified_time" content="2021-03-29T09:53:05.163Z">
 <meta property="article:author" content="Bin Chen">
 <meta property="article:tag" content="数据结构">
 <meta name="twitter:card" content="summary">
@@ -178,6 +178,7 @@
         <h3 id="双链表"><a href="#双链表" class="headerlink" title="双链表"></a>双链表</h3><p>双向链表也叫双链表，是链表的一种，它的每个数据结点中都有两个指针，分别指向直接后继和直接前驱。所以，从双向链表中的任意一个结点开始，都可以很方便地访问它的前驱结点和后继结点。一般我们都构造双向循环链表。</p>
 <h3 id="单链表与双链表的优缺点"><a href="#单链表与双链表的优缺点" class="headerlink" title="单链表与双链表的优缺点"></a>单链表与双链表的优缺点</h3><p>1、双向链表：从双向链表中的任意一个结点开始，都可以很方便地访问前驱结点和后继结点。</p>
 <p>2、单向链表：单个结点创建非常方便，普通的线性内存通常在创建的时候就需要设定数据的大小，结点的访问方便，可以通过循环或者递归的方法访问到任意数据。</p>
+<span id="more"></span>
 <ul>
 <li><p>定义双链表接口</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">package shuanglianbiao;</span><br><span class="line"></span><br><span class="line">public interface LinkedListInterface &#123;</span><br><span class="line"></span><br><span class="line">    public boolean isEmpty();&#x2F;&#x2F;判空</span><br><span class="line"></span><br><span class="line">    public void printList(); &#x2F;&#x2F;遍历</span><br><span class="line"></span><br><span class="line">    public int length(); &#x2F;&#x2F;长度</span><br><span class="line"></span><br><span class="line">    public int locate(Object element); &#x2F;&#x2F;按值查找</span><br><span class="line"></span><br><span class="line">    public Object getElement(int index) throws Exception;&#x2F;&#x2F;按位查找</span><br><span class="line"></span><br><span class="line">    public void insert(int index,Object element) throws Exception;</span><br><span class="line"></span><br><span class="line">    public Object delete(int index) throws Exception;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
