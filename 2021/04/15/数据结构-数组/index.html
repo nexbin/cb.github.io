@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>泛型 | 旋律是风</title>
+  <title>数据结构--数组 | 旋律是风</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Java泛型是JDK1.5中引入的一个新特性，其本质是参数化类型，把类型作为参数传递。  常见形式有泛型类、泛型接口、泛型方法。 语法: &lt;T,…&gt;T称为类型占位符,表示一种引用类型。   好处: 提高代码的重用性 防止类型转换异常,提高代码的安全性">
+  <meta name="description" content="数组1.定义：在连续的内存空间中，存储一组相同类型的元素。 2.区分：  元素  索引：下标，从0开始。代表在内存空间中的相对位置。  数组访问（Access）：通过索引去访问，例如a[1]&#x3D;2。  数组搜索（Search）：例如，找2这个元素，返回2这个元素的下标。    3.四种操作：  访问：时间复杂度O（1） 搜索：时间复杂度O（N） 插入：时间复杂度O（N） 删除：时间复杂度O（N）">
 <meta property="og:type" content="article">
-<meta property="og:title" content="泛型">
-<meta property="og:url" content="http://example.com/2021/04/14/%E6%B3%9B%E5%9E%8B/index.html">
+<meta property="og:title" content="数据结构--数组">
+<meta property="og:url" content="http://example.com/2021/04/15/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E6%95%B0%E7%BB%84/index.html">
 <meta property="og:site_name" content="旋律是风">
-<meta property="og:description" content="Java泛型是JDK1.5中引入的一个新特性，其本质是参数化类型，把类型作为参数传递。  常见形式有泛型类、泛型接口、泛型方法。 语法: &lt;T,…&gt;T称为类型占位符,表示一种引用类型。   好处: 提高代码的重用性 防止类型转换异常,提高代码的安全性">
+<meta property="og:description" content="数组1.定义：在连续的内存空间中，存储一组相同类型的元素。 2.区分：  元素  索引：下标，从0开始。代表在内存空间中的相对位置。  数组访问（Access）：通过索引去访问，例如a[1]&#x3D;2。  数组搜索（Search）：例如，找2这个元素，返回2这个元素的下标。    3.四种操作：  访问：时间复杂度O（1） 搜索：时间复杂度O（N） 插入：时间复杂度O（N） 删除：时间复杂度O（N）">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-04-14T09:03:04.000Z">
-<meta property="article:modified_time" content="2021-04-14T13:49:07.801Z">
+<meta property="article:published_time" content="2021-04-15T14:12:42.000Z">
+<meta property="article:modified_time" content="2021-04-15T14:32:24.461Z">
 <meta property="article:author" content="Bin Chen">
-<meta property="article:tag" content="Java基础">
+<meta property="article:tag" content="数据结构">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="旋律是风" type="application/atom+xml">
@@ -155,66 +155,56 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-泛型" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-数据结构-数组" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      泛型
+      数据结构--数组
     </h1>
   
 
         
-        <a href="/2021/04/14/%E6%B3%9B%E5%9E%8B/" class="archive-article-date">
-  	<time datetime="2021-04-14T09:03:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-14</time>
+        <a href="/2021/04/15/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E6%95%B0%E7%BB%84/" class="archive-article-date">
+  	<time datetime="2021-04-15T14:12:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-15</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Java泛型是JDK1.5中引入的一个新特性，其本质是参数化类型，把类型作为参数传递。</p>
+        <h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><p>1.定义：在<code>连续</code>的内存空间中，存储一组<code>相同类型</code>的元素。</p>
+<p>2.区分：</p>
 <ul>
-<li>常见形式有泛型类、泛型接口、泛型方法。</li>
-<li>语法:<ul>
-<li>&lt;T,…&gt;T称为类型占位符,表示一种引用类型。</li>
-</ul>
+<li><p>元素</p>
 </li>
-<li>好处:<ul>
-<li>提高代码的重用性</li>
-<li>防止类型转换异常,提高代码的安全性</li>
-</ul>
+<li><p>索引：下标，从0开始。代表在内存空间中的相对位置。</p>
+</li>
+<li><p>数组访问（Access）：通过索引去访问，例如a[1]=2。</p>
+</li>
+<li><p>数组搜索（Search）：例如，找2这个元素，返回2这个元素的下标。 </p>
 </li>
 </ul>
-<span id="more"></span>
-
-<h5 id="泛型类"><a href="#泛型类" class="headerlink" title="泛型类"></a>泛型类</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 泛型类</span></span><br><span class="line"><span class="comment"> * 语法：类名&lt;T&gt;</span></span><br><span class="line"><span class="comment"> * T是类型占位符，表示一种引用类型，编写多个使用逗号隔开</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">myGeneric</span>&lt;<span class="title">T</span>&gt;</span>&#123;</span><br><span class="line">	<span class="comment">//1.创建泛型变量</span></span><br><span class="line">	<span class="comment">//不能使用new来创建，因为泛型是不确定的类型，也可能拥有私密的构造方法。</span></span><br><span class="line">	T t;</span><br><span class="line">	<span class="comment">//2.泛型作为方法的参数</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">show</span><span class="params">(T t)</span> </span>&#123;</span><br><span class="line">		System.out.println(t);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">//泛型作为方法的返回值</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> T <span class="title">getT</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> t;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 注意：</span></span><br><span class="line"><span class="comment"> * 1.泛型只能使用引用类型</span></span><br><span class="line"><span class="comment"> * 2.不同泛型类型的对象不能相互赋值</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">testGeneric</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="comment">//使用泛型类创建对象</span></span><br><span class="line">		myGeneric&lt;String&gt; myGeneric1=<span class="keyword">new</span> myGeneric&lt;String&gt;();</span><br><span class="line">		myGeneric1.t=<span class="string">&quot;tang&quot;</span>;</span><br><span class="line">		myGeneric1.show(<span class="string">&quot;he&quot;</span>);</span><br><span class="line">		</span><br><span class="line">		myGeneric&lt;Integer&gt; myGeneric2=<span class="keyword">new</span> myGeneric&lt;Integer&gt;();</span><br><span class="line">		myGeneric2.t=<span class="number">10</span>;</span><br><span class="line">		myGeneric2.show(<span class="number">20</span>);</span><br><span class="line">		Integer integer=myGeneric2.getT();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h5 id="泛型接口"><a href="#泛型接口" class="headerlink" title="泛型接口"></a>泛型接口</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 泛型接口</span></span><br><span class="line"><span class="comment"> * 语法：接口名&lt;T&gt;</span></span><br><span class="line"><span class="comment"> * 注意：不能创建泛型静态常量</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">MyInterface</span>&lt;<span class="title">T</span>&gt; </span>&#123;</span><br><span class="line">    <span class="comment">//创建常量</span></span><br><span class="line">	String nameString=<span class="string">&quot;tang&quot;</span>;</span><br><span class="line">    </span><br><span class="line">	<span class="function">T <span class="title">server</span><span class="params">(T t)</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 实现接口时确定泛型类</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyInterfaceImpl</span> <span class="keyword">implements</span> <span class="title">MyInterface</span>&lt;<span class="title">String</span>&gt;</span>&#123;</span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> String <span class="title">server</span><span class="params">(String t)</span> </span>&#123;</span><br><span class="line">		System.out.println(t);</span><br><span class="line">		<span class="keyword">return</span> t; </span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 实现接口时不确定泛型类</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyInterfaceImpl2</span>&lt;<span class="title">T</span>&gt; <span class="keyword">implements</span> <span class="title">MyInterface</span>&lt;<span class="title">T</span>&gt;</span>&#123;</span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> T <span class="title">server</span><span class="params">(T t)</span> </span>&#123;</span><br><span class="line">		System.out.println(t);</span><br><span class="line">		<span class="keyword">return</span> t;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//测试</span></span><br><span class="line">MyInterfaceImpl2&lt;Integer&gt; myInterfaceImpl2=<span class="keyword">new</span> MyInterfaceImpl2&lt;Integer&gt;();</span><br><span class="line">myInterfaceImpl2.server(<span class="number">2000</span>);</span><br></pre></td></tr></table></figure>
-
-<h5 id="泛型方法"><a href="#泛型方法" class="headerlink" title="泛型方法"></a>泛型方法</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 泛型方法</span></span><br><span class="line"><span class="comment"> * 语法：&lt;T&gt; 返回类型</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyGenericMethod</span> </span>&#123;</span><br><span class="line">	<span class="keyword">public</span> &lt;T&gt; <span class="function"><span class="keyword">void</span> <span class="title">show</span><span class="params">(T t)</span> </span>&#123;</span><br><span class="line">		System.out.println(<span class="string">&quot;泛型方法&quot;</span>+t);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//测试</span></span><br><span class="line">MyGenericMethod myGenericMethod=<span class="keyword">new</span> MyGenericMethod();</span><br><span class="line">myGenericMethod.show(<span class="string">&quot;tang&quot;</span>);</span><br><span class="line">myGenericMethod.show(<span class="number">200</span>);</span><br><span class="line">myGenericMethod.show(<span class="number">3.14</span>);</span><br></pre></td></tr></table></figure>
-
-<h5 id="泛型集合"><a href="#泛型集合" class="headerlink" title="泛型集合"></a><strong>泛型集合</strong></h5><ul>
-<li><strong>概念</strong>：参数化类型、类型安全的集合，强制集合元素的类型必须一致。</li>
-<li>特点：<ul>
-<li>编译时即可检查，而非运行时抛出异常。</li>
-<li>访问时，不必类型转换（拆箱）。</li>
-<li>不同泛型指尖引用不能相互赋值，泛型不存在多态。</li>
+<p>3.四种操作：</p>
+<ul>
+<li>访问：时间复杂度O（1）</li>
+<li>搜索：时间复杂度O（N）</li>
+<li>插入：时间复杂度O（N）</li>
+<li>删除：时间复杂度O（N）</li>
 </ul>
+<p>4.特点</p>
+<ul>
+<li><p>适合读</p>
+</li>
+<li><p>不适合写</p>
 </li>
 </ul>
+<h4 id="LeetCode练习题"><a href="#LeetCode练习题" class="headerlink" title="LeetCode练习题"></a>LeetCode练习题</h4><p>485.最大连续1的个数<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/max-consecutive-ones/">https://leetcode-cn.com/problems/max-consecutive-ones/</a></p>
+<p>283.移动0<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/move-zeroes/">https://leetcode-cn.com/problems/move-zeroes/</a></p>
+<p>27.移除元素<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/remove-element/">https://leetcode-cn.com/problems/remove-element/</a></p>
+<p>​                                </p>
 
       
 
@@ -249,7 +239,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Java基础</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">数据结构</a>
         		</li>
       		
 		</ul>
@@ -305,7 +295,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/04/14/%E6%B3%9B%E5%9E%8B/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/04/15/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E6%95%B0%E7%BB%84/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -319,18 +309,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2021/04/15/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E6%95%B0%E7%BB%84/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          数据结构--数组
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/04/14/%E9%9B%86%E5%90%88-%E5%AE%B9%E5%99%A8/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">集合(容器)</div>
+    <a href="/2021/04/14/%E6%B3%9B%E5%9E%8B/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">泛型</div>
       <i class="icon-circle-right"></i>
     </a>
   
